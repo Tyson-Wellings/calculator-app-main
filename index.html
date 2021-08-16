@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <link href="theme1.css" rel="stylesheet" id="theme">
+  <title>Frontend Mentor | Calculator app</title>
+
+</head>
+<body>
+  <main>
+    <form  id="calc-container">
+      <div id="calc-top-container">
+        <h1>
+          calc
+        </h1>
+        <div id="theme-toggle-container">
+          <label for="theme-toggle" id="theme-toggle-label">
+            theme
+          </label>
+          <div id="theme-toggle-wrapper">
+            <div id="theme-toggle-label-container">
+              <span class="theme-toggle-numb-labels">
+                1
+              </span>
+              <span class="theme-toggle-numb-labels">
+                2
+              </span>
+              <span class="theme-toggle-numb-labels">
+                3
+              </span>
+            </div>
+            <div id="range-slider-wrapper">
+              <input type="range" id="theme-toggle" min="0" max="2" step="1">
+              <div id="visible-thumb"></div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div id="calc-display">
+        399,981
+      </div>
+      <div id="calc-controls-container">
+        <button class="standard-button" type="button" value="7" >
+          <div class="shadow">
+            7
+          </div>
+        </button>
+        <button class="standard-button" type="button" value="8">
+          <div class="shadow">
+            8
+          </div>
+        </button>
+        <button class="standard-button" type="button" value="9">
+          <div class="shadow">
+            9
+          </div>
+        </button>
+        <button class="accent-button" type="button" value="DEL">
+          <div class="shadow">
+            DEL
+          </div>
+        </button>
+        <button class="standard-button" type="button" value="4" >
+          <div class="shadow">
+            4
+          </div>
+        </button>
+        <button class="standard-button" type="button" value="5">
+          <div class="shadow">
+            5
+          </div>
+        </button>
+        <button class="standard-button" type="button" value="6">
+          <div class="shadow">
+            6
+          </div>
+        </button>
+        <button class="standard-button operation" type="button" value="+">
+          <div class="shadow">
+            +
+          </div>
+        </button>
+        <button class="standard-button" type="button" value="1">
+          <div class="shadow">
+            1
+          </div>
+        </button>
+        <button class="standard-button" type="button" value="2">
+          <div class="shadow">
+            2
+          </div>
+        </button>
+        <button class="standard-button" type="button" value="3">
+          <div class="shadow">
+            3
+          </div>
+        </button>
+        <button class="standard-button operation" type="button" value="-">
+          <div class="shadow">
+            -
+          </div>
+        </button>
+        <button class="standard-button" type="button" value=".">
+          <div class="shadow">
+            .
+          </div>
+        </button>
+        <button class="standard-button" type="button" value="0">
+          <div class="shadow">
+            0
+          </div>
+        </button>
+        <button class="standard-button operation" type="button" value="/">
+          <div class="shadow">
+            /
+          </div>
+        </button>
+        <button class="standard-button operation" type="button" value="*">
+          <div class="shadow">
+            x
+          </div>
+        </button>
+        <button class="standard-button accent-button long-button" type="button" value="RESET">
+          <div class="shadow">
+            RESET
+          </div>
+        </button>
+        <button class="standard-button equal-button" type="button" value="=">
+          <div class="shadow">
+            =
+          </div>
+        </button>
+      </div>
+    </form> 
+  </main>
+</body>
+</html>
