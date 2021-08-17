@@ -1,0 +1,60 @@
+body,main{
+    color: white;
+    background-color: #3A4663;
+}
+
+#calc-container{
+    background-color: #3A4663 ;
+}
+
+#theme-toggle{
+    background: #242D44;
+}
+
+#theme-toggle-switch{
+    background-color:hsl(6, 63%, 50%); 
+}
+
+#calc-display{
+    background-color: #181F33 ;
+    color: white;
+}
+
+
+
+#calc-controls-container{
+    background-color: #242D44;
+}
+
+.standard-button{
+    background-color: #EAE3DC;
+    border-bottom:#979797 4px solid;
+}
+
+.equal-button{
+    background-color: #D03F2F;
+    border-bottom: #9c2e22 4px solid;
+    color: white;
+
+}
+
+.delete-button, .reset-button{
+
+    background-color: #647198 ;
+    color: white;
+    border-bottom: #444e6e 4px solid;
+}
+
+.standard-button:hover{
+    background-color: white;
+}
+
+.delete-button:hover, .reset-button:hover{
+    background-color: #A2B2E1;
+}
+
+.equal-button:hover, #theme-toggle-switch:hover {
+    background-color: #F96B5B;
+
+}
+
