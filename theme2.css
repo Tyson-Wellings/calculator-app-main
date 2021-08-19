@@ -1,64 +1,63 @@
 body,main{
-    color: white;
-    background-color: #3A4663;
+    color: #36362C;
+    background-color: #E6E6E6;
 }
 
 #calc-container{
-    background-color: #3A4663 ;
+    background-color: #E6E6E6 ;
 }
 
 #theme-toggle-control{
-    background-color: #242D44;
+    background: #D2CDCD;
 }
 
 #theme-toggle-control::-webkit-slider-runnable-track {
-    background-color: #242D44;
+    background-color: #D2CDCD;
   }
 
 #theme-toggle-control::-webkit-slider-thumb {
-    background-color:hsl(6, 63%, 50%); 
+    background-color:#C85402; 
 
 }
 
 #theme-toggle-control::-moz-range-track {
-    background-color: #242D44;
+    background-color: #D2CDCD;
   }
 
 
 #theme-toggle-control::-moz-range-thumb {
-    background-color:hsl(6, 63%, 50%); 
+    background-color:#C85402; 
 
   }
 
-
 #calc-display{
-    background-color: #181F33 ;
-    color: white;
+    background-color: #EEEEEE;
+    color: #36362C;
 }
 
 
 
 #calc-controls-container{
-    background-color: #242D44;
+    background-color: #D2CDCD;
 }
 
 .standard-button, .operation{
-    background-color: #EAE3DC;
-    border-bottom:#979797 4px solid;
+    background-color: #E5E4E1;
+    border-bottom:#8b8b8b 4px solid;
 }
 
 .equal-button{
-    background-color: #D03F2F;
-    border-bottom: #9c2e22 4px solid;
+    background-color: #C85402;
+    border-bottom: #913d01 4px solid;
     color: white;
 
 }
 
 .delete-button, .reset-button{
 
-    background-color: #647198 ;
+    background-color: #378187 ;
     color: white;
-    border-bottom: #444e6e 4px solid;
+    border-bottom: #2b666b 4px solid;
 }
 
 .standard-button:hover, .operation:hover{
@@ -66,11 +65,11 @@ body,main{
 }
 
 .delete-button:hover, .reset-button:hover{
-    background-color: #A2B2E1;
+    background-color: #62B5BC;
 }
 
 .equal-button:hover, #theme-toggle-switch:hover {
-    background-color: #F96B5B;
+    background-color: #FF8A38;
 
 }
 
