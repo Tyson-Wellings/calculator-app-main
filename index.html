@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
-  <link href="theme1.css" rel="stylesheet" id="theme">
+  <link rel="stylesheet" id="theme">
   <title>Frontend Mentor | Calculator app</title>
 
 </head>
@@ -35,16 +35,15 @@
                 3
               </span>
             </div>
-            <div id="range-slider-wrapper">
-              <input type="range" id="theme-toggle" min="0" max="2" step="1">
-              <div id="visible-thumb"></div>
+            <div id="theme-toggle-control-wrapper">
+              <input type="range" id="theme-toggle-control" min='1' max='3'>
             </div>
             
           </div>
         </div>
       </div>
       <div id="calc-display">
-        399,981
+        
       </div>
       <div id="calc-controls-container">
         <button class="standard-button" type="button" value="7" >
@@ -62,7 +61,7 @@
             9
           </div>
         </button>
-        <button class="accent-button" type="button" value="DEL">
+        <button class="delete-button" type="button" value="DEL">
           <div class="shadow">
             DEL
           </div>
@@ -82,7 +81,7 @@
             6
           </div>
         </button>
-        <button class="standard-button operation" type="button" value="+">
+        <button class="operation" type="button" value="+">
           <div class="shadow">
             +
           </div>
@@ -102,7 +101,7 @@
             3
           </div>
         </button>
-        <button class="standard-button operation" type="button" value="-">
+        <button class="operation" type="button" value="-">
           <div class="shadow">
             -
           </div>
@@ -117,28 +116,29 @@
             0
           </div>
         </button>
-        <button class="standard-button operation" type="button" value="/">
+        <button class="operation" type="button" value="/">
           <div class="shadow">
             /
           </div>
         </button>
-        <button class="standard-button operation" type="button" value="*">
+        <button class="operation" type="button" value="*">
           <div class="shadow">
             x
           </div>
         </button>
-        <button class="standard-button accent-button long-button" type="button" value="RESET">
+        <button class="long-button reset-button" type="button" value="RESET">
           <div class="shadow">
             RESET
           </div>
         </button>
-        <button class="standard-button equal-button" type="button" value="=">
+        <button class="equal-button long-button" type="button" value="=">
+          =
           <div class="shadow">
-            =
           </div>
         </button>
       </div>
     </form> 
   </main>
+  <script src="scripts.js"></script>
 </body>
 </html>
