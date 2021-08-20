@@ -6,6 +6,11 @@ body,main{
     font-size: 16px;
 }
 
+main{
+    width: 100%;
+    box-sizing: border-box;
+}
+
 #calc-container{
     width: 100%;
     padding: 32px 24px;
@@ -62,73 +67,182 @@ body,main{
 
 .theme-toggle-numb-labels{
     font-size: 12px;
+    width: auto;
 }
 
-#range-slider-wrapper{
+#theme-toggle-control-wrapper{
     position: relative;
     height: 26px;
     z-index: 4;
-    background: #242D44;
     border-radius: 13px;
+    width: 71px;
 }
 
-#theme-toggle{
+#theme-toggle-control{
     width: 100%;
+    -webkit-appearance: none;
     margin: 0;
-    z-index: 5;
-    opacity: 0;
+    border-radius: 13px;
+    position: relative;
+    z-index: 9;
+
+
 }
 
-/* Styling the theme slider */
-
-/* Special styling for WebKit/Blink */
-#theme-toggle::-webkit-slider-thumb {
+#theme-toggle-control::-webkit-slider-runnable-track {
+    margin: 0;
+    box-sizing: border-box;
     -webkit-appearance: none;
-    height: 16px;
-    width: 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    opacity: 0.5;
-    z-index: 5;
-    
+    width: 71px;
+    height: 26px;
+    border-radius: 13px;
+    padding: 5px;
   }
+
+  #theme-toggle-control::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    z-index: 4;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+#theme-toggle-control:hover::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    z-index: 4;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+  
   
   /* All the same stuff for Firefox */
-  #theme-toggle::-moz-range-thumb {
-    -moz-appearance: none;
-    border: none;
-    height: 16px;
-    width: 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    opacity: 0.5;
-    z-index: 5;
+
+    
+#theme-toggle-control::-moz-range-track {
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    width: 71px;
+    height: 26px;
+    border-radius: 13px;
+    padding: 5px;
   }
 
-  #visible-thumb{
-    height: 16px;
+
+#theme-toggle-control::-moz-range-thumb {
+
+    position: relative;
     width: 16px;
-    background-color:hsl(6, 63%, 50%);
-    border-radius: 8px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+    height: 16px;
     z-index: 4;
+    border-radius: 13px;
+    cursor: pointer;
   }
 
-  #theme-toggle::-webkit-slider-runnable-track {
+#calc-display{
     width: 100%;
-    padding: 5px; 
+    box-sizing: border-box;
+    text-align: right;
+    font-size: 32px;
+    padding: 26px 24px;
+    margin: 32px 0 24px 0;
+    border-radius: 10px;
+}
+
+
+
+#calc-controls-container{
+    display: grid;
+    padding: 24px;
+    box-sizing: border-box;
+    grid-template-columns: repeat(4, 60px);
+    grid-template-rows: repeat(5, 64px);
+    column-gap: 13px;
+    row-gap: 13px;
+    border-radius: 10px;
+
+}
+
+
+.standard-button,.operation{
+    border: none;
+    border-radius: 5px;
+    height: 64px; 
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.long-button{
+    border: none;
+    border-radius: 5px;
+    height: 64px;
+    width: 133px; 
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.equal-button{
+    grid-column: 3/4;
+}
+
+.delete-button, .reset-button{
+    border-radius: 5px;
+    border: none;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.delete-button:hover, .reset-button:hover, .standard-button:hover, .operation:hover{
     cursor: pointer;
-    border-radius: 13px;
-    margin: 0;
-  }
-  
-  #theme-toggle::-moz-range-track {
-    width: 100%;
-    padding: 5px; 
+}
+
+.equal-button:hover, #theme-toggle-switch:hover {
     cursor: pointer;
-    border-radius: 13px;
-    margin: 0;
-  }
+
+}
+
+@media only screen and (min-width: 600px) {
+
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        height: 100vh;
+        
+    }
+    #calc-container{
+        width: 540px;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    #calc-display{
+        font-size: 38px;
+        padding: 38px 32px;
+    }
+
+    #calc-controls-container{
+        padding: 32px;
+        row-gap: 24px;
+        column-gap: 24px;
+        grid-template-columns: repeat(4, 101px);
+        grid-template-rows: repeat(5, 64px);
+    }
+
+    .long-button{
+        width: 227px;
+    }
+}
+
+
+

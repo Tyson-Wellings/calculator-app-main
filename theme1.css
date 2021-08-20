@@ -69,7 +69,7 @@ body,main{
     background-color: #A2B2E1;
 }
 
-.equal-button:hover, #theme-toggle-switch:hover {
+.equal-button:hover, #theme-toggle-control:hover::-webkit-slider-thumb {
     background-color: #F96B5B;
 
 }

@@ -1,53 +1,55 @@
 body,main{
-    color: #36362C;
-    background-color: #E6E6E6;
+    color: #FFE53D;
+    background-color: #17062A;
 }
 
 #calc-container{
-    background-color: #E6E6E6 ;
+    background-color: #17062A ;
 }
 
+
 #theme-toggle-control{
-    background: #D2CDCD;
+    background: #1E0936;
 }
 
 #theme-toggle-control::-webkit-slider-runnable-track {
-    background-color: #D2CDCD;
+    background: #1E0936;
   }
 
 #theme-toggle-control::-webkit-slider-thumb {
-    background-color:#C85402; 
+    background-color:#00DED0; 
 
 }
 
 #theme-toggle-control::-moz-range-track {
-    background-color: #D2CDCD;
+    background: #1E0936;
   }
 
 
 #theme-toggle-control::-moz-range-thumb {
-    background-color:#C85402; 
+    background-color:#00DED0; 
 
   }
 
 #calc-display{
-    background-color: #EEEEEE;
-    color: #36362C;
+    background-color: #1E0936;
+    color: #FFE53D;
 }
 
 
 
 #calc-controls-container{
-    background-color: #D2CDCD;
+    background-color: #1E0936;
 }
 
 .standard-button, .operation{
-    background-color: #E5E4E1;
+    background-color: #331C4D;
     border-bottom:#8b8b8b 4px solid;
+    color: #FFE53D;
 }
 
 .equal-button{
-    background-color: #C85402;
+    background-color: #00DED0;
     border-bottom: #913d01 4px solid;
     color: white;
 
@@ -55,21 +57,21 @@ body,main{
 
 .delete-button, .reset-button{
 
-    background-color: #378187 ;
+    background-color: #56077C ;
     color: white;
     border-bottom: #2b666b 4px solid;
 }
 
 .standard-button:hover, .operation:hover{
-    background-color: white;
+    background-color: #8631AF;
 }
 
 .delete-button:hover, .reset-button:hover{
-    background-color: #62B5BC;
+    background-color: #8631AF;
 }
 
 .equal-button:hover, #theme-toggle-control:hover::-webkit-slider-thumb {
-    background-color: #FF8A38;
+    background-color: #93FFF8;
 
 }
 
