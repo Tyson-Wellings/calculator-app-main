@@ -145,16 +145,31 @@ main{
     cursor: pointer;
   }
 
-#calc-display{
+#calc-display-container{
     width: 100%;
+    position: relative;
     box-sizing: border-box;
     text-align: right;
     font-size: 32px;
-    padding: 26px 24px;
     margin: 32px 0 24px 0;
     border-radius: 10px;
 }
 
+#calc-display{
+    border-radius: 10px;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    padding: 26px 24px;
+}
+
+#equation{
+    font-weight: 500;
+    position: absolute;
+    right: 24px;
+    top: 9px;
+    font-size: 12px;
+}
 
 
 #calc-controls-container{
@@ -229,6 +244,13 @@ main{
     #calc-display{
         font-size: 38px;
         padding: 38px 32px;
+    }
+
+    #equation{
+        position: absolute;
+        right: 32px;
+        top: 12px;
+        font-size: 18px;
     }
 
     #calc-controls-container{
