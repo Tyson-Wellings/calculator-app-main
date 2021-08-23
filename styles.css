@@ -183,8 +183,8 @@ main{
     display: grid;
     padding: 24px;
     box-sizing: border-box;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 0.5fr);
+    grid-template-rows: repeat(5, 0.5fr);
     column-gap: 13px;
     row-gap: 13px;
     border-radius: 10px;
