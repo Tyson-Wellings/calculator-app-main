@@ -107,6 +107,7 @@ main{
     z-index: 4;
     border-radius: 13px;
     cursor: pointer;
+    border: none;
 }
 
 #theme-toggle-control:hover::-webkit-slider-thumb {
@@ -117,6 +118,7 @@ main{
     z-index: 4;
     border-radius: 13px;
     cursor: pointer;
+    border: none;
 }
 
   
@@ -143,6 +145,7 @@ main{
     z-index: 4;
     border-radius: 13px;
     cursor: pointer;
+    border: none;
   }
 
 #calc-display-container{
@@ -173,15 +176,20 @@ main{
 
 
 #calc-controls-container{
+    width: 100%;
     display: grid;
     padding: 24px;
     box-sizing: border-box;
-    grid-template-columns: repeat(4, 60px);
-    grid-template-rows: repeat(5, 64px);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     column-gap: 13px;
     row-gap: 13px;
     border-radius: 10px;
 
+}
+
+button{
+    text-align: center;
 }
 
 
@@ -198,14 +206,10 @@ main{
     border: none;
     border-radius: 5px;
     height: 64px;
-    width: 133px; 
     font-family: 'Spartan', sans-serif;
     font-weight: 700;
     font-size: 16px;
-}
-
-.equal-button{
-    grid-column: 3/4;
+    grid-column: span 2;
 }
 
 .delete-button, .reset-button{
