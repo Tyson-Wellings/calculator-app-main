@@ -132,6 +132,7 @@ function calculate(){
 function recalibrateVariables(number){
     display.innerHTML = number.toLocaleString('en-US');
     history.splice(1) //reset the history array by splicing out all the other index's after 0
+
 }
 
 function prepareEqualButton(){
@@ -154,7 +155,7 @@ function prepareEqualButton(){
         })
     })
 }
-
+//This function is called upon when the equal sign is spammed. 
 function reCalculate(){
     displayEquation = calcDisplay+displayOperations[opCheck.lastIndexOf(1)]+ prevDisplay+"=";
     if ( displayEquation != 'undefined')
