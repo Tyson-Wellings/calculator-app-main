@@ -191,7 +191,14 @@ main{
 }
 
 button{
-    text-align: left;
+    position: relative;
+}
+
+button .text-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
