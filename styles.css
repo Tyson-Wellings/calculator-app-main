@@ -12,6 +12,7 @@ main{
 }
 
 #calc-container{
+    margin: auto;
     width: 100%;
     padding: 32px 24px;
     box-sizing: border-box;
@@ -176,6 +177,7 @@ main{
 
 
 #calc-controls-container{
+    position: relative;
     width: 100%;
     display: grid;
     padding: 24px;
@@ -196,7 +198,6 @@ button{
 .standard-button,.operation{
     border: none;
     border-radius: 5px;
-    height: 64px; 
     font-family: 'Spartan', sans-serif;
     font-weight: 700;
     font-size: 28px;
