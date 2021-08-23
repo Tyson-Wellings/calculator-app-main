@@ -100,7 +100,7 @@ function prepareOperations(){
             /* This will make the corresponding index in the opCheck array = 1 which will then be used for 
             the subsequent calculation */
             opCheck[operations.lastIndexOf(button.value)] = 1
-            displayEquation = prevDisplay+displayOperations[opCheck.lastIndexOf(1)];
+            displayEquation = lastAnswer+displayOperations[opCheck.lastIndexOf(1)];
             equation.innerHTML = displayEquation;
             recalibrateVariables(calcDisplay)
 
