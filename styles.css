@@ -8,6 +8,7 @@ body,main{
 
 main{
     width: 100%;
+    position: absolute;
     box-sizing: border-box;
 }
 
